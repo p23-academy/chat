@@ -1,0 +1,55 @@
+.chat {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: antiquewhite;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.messages .message {
+    background-color: white;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: fit-content;
+}
+
+.messages .message.user {
+    background-color: deepskyblue;
+    border-bottom-left-radius: 0;
+}
+
+.messages .message.guest {
+    background-color: lightgreen;
+    border-bottom-right-radius: 0;
+    align-self: end;
+}
+
+.user {
+    background-color: deepskyblue;
+}
+
+.guest {
+    background-color: lightgreen;
+}
+
+.type {
+    display: flex;
+    margin: 0.5rem;
+    gap: 0.5rem;
+}
+
+.type textarea {
+    width: 100%;
+    height: 2rem;
+    resize: none;
+}
